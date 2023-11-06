@@ -1,4 +1,4 @@
-import { Line, LineChart } from 'recharts';
+import { Line, LineChart, CartesianGrid, XAxis, YAxis, Tooltip, Legend } from 'recharts';
 
 const data = [
   { name: '2017', react: 32, angular: 37, vue: 60 },
@@ -13,13 +13,19 @@ const RechartsExample = () => {
   return (
     <>
       <div className="titleMap">
-          <h3>Titulo: Mapa Geral</h3>
+          <h3>Titulo: Graph Line - Rechart</h3>
       </div>
       <div className="recharXample">
         <LineChart width={600} height={300} data={data}>
           <Line type='monotone' dataKey='react' stroke='#2196F3' strokeWidth={3} />
           <Line type='monotone' dataKey='angular' stroke='#F44236' strokeWidth={3} />
           <Line type='monotone' dataKey='vue' stroke='#FFCA29' strokeWidth={3} />
+
+        <CartesianGrid  stroke='#ccc' />   
+        < XAxis dataKey='name' />  
+        < YAxis />  
+        < Tooltip />
+        < Legend />
         </LineChart>
     </div>
     </>
