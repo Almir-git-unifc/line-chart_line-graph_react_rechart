@@ -1,0 +1,16 @@
+#root {
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Centralização do mapa */
+.recharXample{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titleMap{
+  padding-top: 2%;
+}
